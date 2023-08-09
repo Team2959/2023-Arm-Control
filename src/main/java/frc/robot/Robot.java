@@ -76,6 +76,26 @@ public class Robot extends TimedRobot {
 
     @Override
     public void teleopPeriodic() {
+
+        // when the robot is enabled in Teleop mode, this function will be called periodically
+        // When in this mode for the test arm program what do we want to do?
+        // -- have a SMART DASHBOARD that shows:
+        // ---- Arm target position in terms of MOTOR ROTATIONS (allow editing of entry)
+        // ---- Allowable MOTOR ROTATIONS is 0 - 125
+        // ---- Display Kp term (allow editing of entry)
+        // ---- Display Ki term (allow editing of entry)
+        // ---- Display Kd term (allow editing of entry)
+        // ---- Display Izone value (allow editing of entry)
+        // ---- Display a FF value (allow editing of entry)
+        // ---- Initial values of the above should be initialized by the software
+        // ---- If the user changes ANY of the above entries, the TARGET POSITION should be set 
+        //      to the CURRENT POSITION so that arm motion STOPS.  New values should then be
+        //      applied and take effect when a new TARGET POSITION is entered
+        // ---- Display in plot A the motor driving command [-1..1]
+        // ---- Display in plot B the CURRENT POSITION in terms of MOTOR ROTATIONS
+        // ---- Display in plot B the TARGET POSITION
+        // ---- Display in plot C the motor SPEED in RPM
+        // ---- Display in plot D the motor current
     }
 
     @Override

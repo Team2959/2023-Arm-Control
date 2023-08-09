@@ -16,7 +16,7 @@ public final class RobotMap {
     // public static final int kBackRightTurnCANSparkMaxMotor = 13;
     // public static final int kFrontRightTurnCANSparkMaxMotor = 14;
     // public static final int kArmRotatorSparkMaxMotor = 7;
-    public static final int kArmExtensionSparkMaxMotor = 8;
+    public static final int kArmExtensionSparkMaxMotor = 9;
 
     // PWM motor addresses
     // public static final int kGripVacuumSparkMotor = 2;
