@@ -24,7 +24,7 @@ public class ArmExtensionSubsystem extends SubsystemBase {
     private static final double kArmExtensionIzone = 0;
     // private static final double kSmartAllowedError = 0;
 
-    private static final int stepResponse = 0;
+    private int stepResponse = 0;
 
     private CANSparkMax m_armExtensionMotor = new CANSparkMax(RobotMap.kArmExtensionSparkMaxMotor,
             MotorType.kBrushless);
@@ -93,6 +93,7 @@ public class ArmExtensionSubsystem extends SubsystemBase {
 
     public double getArmExtensionPosition() {
         return m_extensionEncoder.getPosition();
+    }
  
 
     public void smartDashboardInit() {
