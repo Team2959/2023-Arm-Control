@@ -28,7 +28,7 @@ public class RobotContainer {
 
         configureBindings();
         smartDashboardInit();
-        registerSmartDashboardCalls();
+        // registerSmartDashboardCalls();
     }
 
     public void smartDashboardInit() {
