@@ -46,4 +46,9 @@ public class RobotContainer {
     private void configureBindings() {
         m_testButtonExtension.onTrue(new TestArmExtensionCommand(m_armExtensionSubsystem));
     }
+
+    public void OnTeleOpInit()
+    {
+        m_armExtensionSubsystem.AEteleopInit();
+    }
 }

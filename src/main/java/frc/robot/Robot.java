@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+import frc.robot.subsystems.ArmExtensionSubsystem;
 
 public class Robot extends TimedRobot {
     private RobotContainer m_robotContainer;
@@ -71,7 +72,8 @@ public class Robot extends TimedRobot {
 
     @Override
     public void teleopInit() {
-        CommandScheduler.getInstance().cancelAll();
+        m_robotContainer.OnTeleOpInit();
+       CommandScheduler.getInstance().cancelAll();
     }
 
     @Override

@@ -56,6 +56,10 @@ public class ArmExtensionSubsystem extends SubsystemBase {
         
     }
 
+
+    public void AEteleopInit() {
+        stepResponse = 0;
+    }
     @Override
     public void periodic() {
         // This method will be called once per scheduler run
@@ -67,7 +71,7 @@ public class ArmExtensionSubsystem extends SubsystemBase {
         else 
         {
             m_armExtensionMotor.set(0.0);
-            stepResponse = 50;
+            stepResponse = 51;
         }
 
         //P SmartDashboard.putNumber(getName() + "/Arm Extension Ticks", getArmExtensionPosition());
